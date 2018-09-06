@@ -1,0 +1,17 @@
+<div class="title-block">
+  <h3 class="title pull-left">
+    Страница счета <span class="sparkline bar"></span>
+  </h3>
+  <div class="pull-right">
+    <button class="btn-sm btn btn-primary-outline" (click)="onRefresh()">
+      <i class="fa fa-refresh"></i>
+    </button>
+  </div>
+</div>
+<section class="section">
+  <div class="row text-center" *ngIf="!isLoaded">Loading...</div>
+  <div class="row">
+    <app-bill-card [bill]="bill" [currency]="currency" *ngIf="isLoaded"></app-bill-card>
+    <app-currency-card [currency]="currency" *ngIf="isLoaded"></app-currency-card>
+  </div>
+</section>

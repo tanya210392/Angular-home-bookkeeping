@@ -6,7 +6,6 @@ import { SystemRoutingModule } from './system-routing.module';
 import { DropdownDirective } from './common/directives/dropdown.directive';
 import { SystemComponent } from './system.component';
 import { BillPageComponent } from './bill-page/bill-page.component';
-import { HistoryPageComponent } from './history-page/history-page.component';
 import { PlanningPageComponent } from './planning-page/planning-page.component';
 import { SidebarComponent } from './common/components/sidebar/sidebar.component';
 import { HeaderComponent } from './common/components/header/header.component';
@@ -22,7 +21,6 @@ import { AddEventComponent } from './records-page/add-event/add-event.component'
   declarations: [
     SystemComponent,
     BillPageComponent,
-    HistoryPageComponent,
     PlanningPageComponent,
     SidebarComponent,
     HeaderComponent,
